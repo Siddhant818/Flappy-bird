@@ -2,6 +2,8 @@
 
 This is a small Flappy Bird style game built with [Kaboom.js](https://kaboomjs.com). The game is split into scene modules so the gameplay and game-over screens stay easy to change.
 
+Live demo: https://flappy-bird-one-phi.vercel.app/
+
 ## What Runs
 
 - `index.html` loads Kaboom from the CDN and starts `main.js`
@@ -37,7 +39,7 @@ Then open `http://localhost:8000` in your browser.
 
 ## Deploying To Vercel
 
-Yes, you can deploy this to Vercel as a static site.
+Yes, you can deploy this to Vercel as a static site. The current live build is here: https://flappy-bird-one-phi.vercel.app/
 
 ### Option 1: Vercel Dashboard
 
