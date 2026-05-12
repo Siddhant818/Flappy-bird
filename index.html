@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Flappy Neon Kaboom</title>
+  <style>
+    :root {
+      --game-aspect: 2 / 3;
+      --safe-gap: clamp(10px, 2.4vmin, 20px);
+    }
+
+    body {
+      margin: 0;
+      background: linear-gradient(to bottom, #c7ecff, #effbff);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      min-height: 100dvh;
+      padding: var(--safe-gap);
+      box-sizing: border-box;
+      overflow: hidden;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      touch-action: manipulation;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    canvas {
+      width: min(calc(100vw - (var(--safe-gap) * 2)), calc((100dvh - (var(--safe-gap) * 2)) * (2 / 3)));
+      height: auto;
+      max-width: 100%;
+      max-height: calc(100dvh - (var(--safe-gap) * 2));
+      aspect-ratio: var(--game-aspect);
+      object-fit: contain;
+      border-radius: 10px;
+      box-shadow: 0 14px 30px rgba(0, 0, 0, 0.14);
+    }
+
+    @media (max-width: 480px) {
+      canvas {
+        border-radius: 8px;
+        box-shadow: 0 10px 22px rgba(0, 0, 0, 0.18);
+      }
+    }
+  </style>
+</head>
+<body>
+  <script src="https://unpkg.com/kaboom@3000/dist/kaboom.js"></script>
+  <script type="module" src="main.js"></script>
+</body>
+</html>

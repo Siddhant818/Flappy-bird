@@ -1,0 +1,9 @@
+# typical ignores
+node_modules/
+.DS_Store
+
+# kaboom cache if any
+dist/
+
+# ignore assets until you add them
+assets/*
